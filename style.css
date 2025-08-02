@@ -832,3 +832,69 @@ footer p {
     display: none;
   }
 }
+
+.skills-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 2rem; 
+}
+
+.skill-category { 
+    background-color: var(--card-color); 
+    border: 1px solid var(--border-color); 
+    padding: 2rem; 
+    border-radius: 12px; 
+}
+
+.skill-category h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.skills-list { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 2rem;
+}
+
+.skill-item { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+.skill-item i {
+    font-size: 3rem; /* Tamanho dos ícones */
+    color: var(--secondary-text-color);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.skill-item span {
+    font-size: 0.875rem;
+    color: var(--secondary-text-color);
+    transition: color 0.3s;
+}
+
+/* Efeito Hover */
+.skill-item:hover i,
+.skill-item:hover span {
+    color: var(--accent-color);
+}
+.skill-item:hover i {
+    transform: scale(1.1);
+}
+
+/* Ajuste para ícones que não são da biblioteca, como Framer Motion */
+.skill-item i.ph-duotone {
+    font-size: 2.8rem;
+}
+.skill-item i:not([class*='devicon-']) {
+    font-style: normal;
+    font-weight: 600;
+}
+
