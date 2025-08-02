@@ -1,184 +1,456 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Társis Barreto | Desenvolvedor Full-Stack</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="cursor-trail"></div>
 
     <aside class="social-bar">
-        <a href="https://www.linkedin.com/in/t%C3%A1rsis-barreto-59u59/" target="_blank" title="LinkedIn" class="magnetic"><i class="ph-duotone ph-linkedin-logo"></i></a>
-        <a href="https://github.com/Tarsis59" target="_blank" title="GitHub" class="magnetic"><i class="ph-duotone ph-github-logo"></i></a>
-        <a href="https://www.instagram.com/tarsis.crvalho" target="_blank" title="Instagram" class="magnetic"><i class="ph-duotone ph-instagram-logo"></i></a>
+      <a
+        href="https://www.linkedin.com/in/t%C3%A1rsis-barreto-59u59/"
+        target="_blank"
+        title="LinkedIn"
+        class="magnetic"
+        ><i class="ph-duotone ph-linkedin-logo"></i
+      ></a>
+      <a
+        href="https://github.com/Tarsis59"
+        target="_blank"
+        title="GitHub"
+        class="magnetic"
+        ><i class="ph-duotone ph-github-logo"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/tarsis.crvalho"
+        target="_blank"
+        title="Instagram"
+        class="magnetic"
+        ><i class="ph-duotone ph-instagram-logo"></i
+      ></a>
     </aside>
 
     <header>
-        <nav class="container">
-            <a href="#home" class="logo" data-translate="logo">TÁRSIS.DEV</a>
-            <ul class="nav-list">
-                <li><a href="#sobre" data-translate="nav_sobre">Sobre</a></li>
-                <li><a href="#processo" data-translate="nav_processo">Processo</a></li>
-                <li><a href="#experiencia" data-translate="nav_experiencia">Experiência</a></li>
-                <li><a href="#habilidades" data-translate="nav_habilidades">Habilidades</a></li>
-                <li><a href="#projetos" data-translate="nav_projetos">Projetos</a></li>
-                <li><a href="#contato" data-translate="nav_contato">Contato</a></li>
-            </ul>
-            <div class="header-actions">
-                <button id="lang-switcher">PT</button>
-                <button id="theme-switcher"><i class="ph-duotone ph-sun"></i></button>
-            </div>
-        </nav>
+      <nav class="container">
+        <a href="#home" class="logo" data-translate="logo">TÁRSIS.DEV</a>
+        <ul class="nav-list">
+          <li><a href="#sobre" data-translate="nav_sobre">Sobre</a></li>
+          <li>
+            <a href="#processo" data-translate="nav_processo">Processo</a>
+          </li>
+          <li>
+            <a href="#experiencia" data-translate="nav_experiencia"
+              >Experiência</a
+            >
+          </li>
+          <li>
+            <a href="#habilidades" data-translate="nav_habilidades"
+              >Habilidades</a
+            >
+          </li>
+          <li>
+            <a href="#projetos" data-translate="nav_projetos">Projetos</a>
+          </li>
+          <li><a href="#contato" data-translate="nav_contato">Contato</a></li>
+        </ul>
+        <div class="header-actions">
+          <button id="lang-switcher">PT</button>
+          <button id="theme-switcher"><i class="ph-duotone ph-sun"></i></button>
+          <button id="hamburger-btn"><i class="ph ph-list"></i></button>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="home" class="container content-section">
-            <div class="home-text">
-                <h1 data-translate="home_saudacao">Olá, eu sou</h1>
-                <h2 class="home-name">Társis<br>Carvalho<br>Barreto</h2>
-                <h3 data-translate="home_cargo">Desenvolvedor Mobile e Web</h3>
-                <p data-translate="home_descricao">Com experiência em React, React Native e Node.js, focado em criar interfaces modernas, responsivas e de alta performance.</p>
-            </div>
-            <div class="home-image">
-                <img src="assets/profile.jpg" alt="Foto de perfil de Társis Barreto">
-            </div>
-        </section>
+      <section id="home" class="container content-section">
+        <div class="home-text">
+          <h1 data-translate="home_saudacao">Olá, eu sou</h1>
+          <h2 class="home-name">Társis<br />Carvalho<br />Barreto</h2>
+          <h3 data-translate="home_cargo">Desenvolvedor Mobile e Web</h3>
+          <p data-translate="home_descricao">
+            Com experiência em React, React Native e Node.js, focado em criar
+            interfaces modernas, responsivas e de alta performance.
+          </p>
+        </div>
+        <div class="home-image">
+          <img
+            src="assets/profile.jpg"
+            alt="Foto de perfil de Társis Barreto"
+          />
+        </div>
+      </section>
 
-        <section id="sobre" class="container content-section">
-            <div class="sobre-content">
-                <div class="sobre-image"><img src="assets/profile.jpg" alt="Foto de perfil de Társis Barreto"></div>
-                <div class="sobre-text">
-                    <h2 class="section-title" data-translate="sobre_titulo">Sobre Mim</h2>
-                    <p class="section-subtitle" data-translate="sobre_subtitulo">Uma breve apresentação</p>
-                    <div class="sobre-cards">
-                        <div class="sobre-card"><i class="ph-duotone ph-student"></i><span data-translate="sobre_card1_titulo">Aprendizagem Contínua</span><p data-translate="sobre_card1_desc">Adaptação a novas tecnologias com facilidade.</p></div>
-                        <div class="sobre-card"><i class="ph-duotone ph-lightbulb"></i><span data-translate="sobre_card2_titulo">Solucionador de Problemas</span><p data-translate="sobre_card2_desc">Capacidade analítica para soluções eficazes.</p></div>
-                        <div class="sobre-card"><i class="ph-duotone ph-users"></i><span data-translate="sobre_card3_titulo">Trabalho em Equipe</span><p data-translate="sobre_card3_desc">Colaboração para alcançar melhores juntos.</p></div>
-                    </div>
-                    <p class="sobre-descricao" data-translate="sobre_paragrafo">Desenvolvedor com experiência prática em React.js, React Native, e Node.js. Focado na criação de experiências de usuário intuitivas e eficientes, com experiência no uso de frameworks como React, React Native, Next.js e CSS para desenvolvimento de aplicações web e mobile. Familiaridade com versionamento de código utilizando GitHub e metodologias ágeis, comprometido com a entrega de produtos de alta qualidade.</p>
-                    <a href="assets/Currículo Profissional Társis Barreto.pdf" download class="btn" data-translate="sobre_botao_cv"><i class="ph-duotone ph-download-simple"></i> Baixar Currículo</a>
-                </div>
+      <section id="sobre" class="container content-section">
+        <div class="sobre-content">
+          <div class="sobre-image">
+            <img
+              src="assets/profile.jpg"
+              alt="Foto de perfil de Társis Barreto"
+            />
+          </div>
+          <div class="sobre-text">
+            <h2 class="section-title" data-translate="sobre_titulo">
+              Sobre Mim
+            </h2>
+            <p class="section-subtitle" data-translate="sobre_subtitulo">
+              Uma breve apresentação
+            </p>
+            <div class="sobre-cards">
+              <div class="sobre-card">
+                <i class="ph-duotone ph-student"></i
+                ><span data-translate="sobre_card1_titulo"
+                  >Aprendizagem Contínua</span
+                >
+                <p data-translate="sobre_card1_desc">
+                  Adaptação a novas tecnologias com facilidade.
+                </p>
+              </div>
+              <div class="sobre-card">
+                <i class="ph-duotone ph-lightbulb"></i
+                ><span data-translate="sobre_card2_titulo"
+                  >Solucionador de Problemas</span
+                >
+                <p data-translate="sobre_card2_desc">
+                  Capacidade analítica para soluções eficazes.
+                </p>
+              </div>
+              <div class="sobre-card">
+                <i class="ph-duotone ph-users"></i
+                ><span data-translate="sobre_card3_titulo"
+                  >Trabalho em Equipe</span
+                >
+                <p data-translate="sobre_card3_desc">
+                  Colaboração para alcançar melhores juntos.
+                </p>
+              </div>
             </div>
-        </section>
+            <p class="sobre-descricao" data-translate="sobre_paragrafo">
+              Desenvolvedor com experiência prática em React.js, React Native, e
+              Node.js. Focado na criação de experiências de usuário intuitivas e
+              eficientes, com experiência no uso de frameworks como React, React
+              Native, Next.js e CSS para desenvolvimento de aplicações web e
+              mobile. Familiaridade com versionamento de código utilizando
+              GitHub e metodologias ágeis, comprometido com a entrega de
+              produtos de alta qualidade.
+            </p>
+            <a
+              href="assets/Currículo Profissional Társis Barreto.pdf"
+              download
+              class="btn"
+              data-translate="sobre_botao_cv"
+              ><i class="ph-duotone ph-download-simple"></i> Baixar Currículo</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <section id="processo" class="container content-section">
-            <h2 class="section-title" data-translate="processo_titulo">Meu Processo</h2>
-            <p class="section-subtitle" data-translate="processo_subtitulo">Como transformo ideias em realidade</p>
-            <div class="processo-grid">
-                <div class="processo-card">
-                    <span class="step-number">01</span>
-                    <i class="ph-duotone ph-compass"></i>
-                    <h3 data-translate="processo_card1_titulo">Descoberta e Planejamento</h3>
-                    <p data-translate="processo_card1_desc">Entendo os requisitos, defino o escopo e planejo a arquitetura para garantir uma base sólida e escalável.</p>
-                </div>
-                <div class="processo-card">
-                    <span class="step-number">02</span>
-                    <i class="ph-duotone ph-paint-brush"></i>
-                    <h3 data-translate="processo_card2_titulo">Design e Prototipação</h3>
-                    <p data-translate="processo_card2_desc">Crio interfaces intuitivas e protótipos interativos focados na melhor experiência para o usuário final.</p>
-                </div>
-                <div class="processo-card">
-                    <span class="step-number">03</span>
-                    <i class="ph-duotone ph-code"></i>
-                    <h3 data-translate="processo_card3_titulo">Desenvolvimento e Testes</h3>
-                    <p data-translate="processo_card3_desc">Codifico a solução utilizando tecnologias modernas, código limpo e testes para garantir a qualidade e performance.</p>
-                </div>
-                <div class="processo-card">
-                    <span class="step-number">04</span>
-                    <i class="ph-duotone ph-rocket-launch"></i>
-                    <h3 data-translate="processo_card4_titulo">Deploy e Manutenção</h3>
-                    <p data-translate="processo_card4_desc">Publico a aplicação em ambientes de produção e monitoro para garantir estabilidade e realizar melhorias contínuas.</p>
-                </div>
-            </div>
-        </section>
+      <section id="processo" class="container content-section">
+        <h2 class="section-title" data-translate="processo_titulo">
+          Meu Processo
+        </h2>
+        <p class="section-subtitle" data-translate="processo_subtitulo">
+          Como transformo ideias em realidade
+        </p>
+        <div class="processo-grid">
+          <div class="processo-card">
+            <span class="step-number">01</span>
+            <i class="ph-duotone ph-compass"></i>
+            <h3 data-translate="processo_card1_titulo">
+              Descoberta e Planejamento
+            </h3>
+            <p data-translate="processo_card1_desc">
+              Entendo os requisitos, defino o escopo e planejo a arquitetura
+              para garantir uma base sólida e escalável.
+            </p>
+          </div>
+          <div class="processo-card">
+            <span class="step-number">02</span>
+            <i class="ph-duotone ph-paint-brush"></i>
+            <h3 data-translate="processo_card2_titulo">
+              Design e Prototipação
+            </h3>
+            <p data-translate="processo_card2_desc">
+              Crio interfaces intuitivas e protótipos interativos focados na
+              melhor experiência para o usuário final.
+            </p>
+          </div>
+          <div class="processo-card">
+            <span class="step-number">03</span>
+            <i class="ph-duotone ph-code"></i>
+            <h3 data-translate="processo_card3_titulo">
+              Desenvolvimento e Testes
+            </h3>
+            <p data-translate="processo_card3_desc">
+              Codifico a solução utilizando tecnologias modernas, código limpo e
+              testes para garantir a qualidade e performance.
+            </p>
+          </div>
+          <div class="processo-card">
+            <span class="step-number">04</span>
+            <i class="ph-duotone ph-rocket-launch"></i>
+            <h3 data-translate="processo_card4_titulo">Deploy e Manutenção</h3>
+            <p data-translate="processo_card4_desc">
+              Publico a aplicação em ambientes de produção e monitoro para
+              garantir estabilidade e realizar melhorias contínuas.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="experiencia" class="container content-section">
-            <h2 class="section-title" data-translate="experiencia_titulo">Experiência</h2>
-            <p class="section-subtitle" data-translate="experiencia_subtitulo">Minha jornada profissional</p>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 data-translate="exp1_cargo">Desenvolvedor Mobile e Web</h3>
-                        <p class="company">CEPEDI</p>
-                        <p class="date"><i class="ph-duotone ph-calendar-blank"></i> <span data-translate="exp1_data">Junho 2024 - Dezembro 2024</span></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 data-translate="exp2_cargo">Desenvolvedor e Pesquisador em IA</h3>
-                        <p class="company" data-translate="exp2_empresa">Projeto BAH.IA</p>
-                        <p class="date"><i class="ph-duotone ph-calendar-blank"></i> <span data-translate="exp2_data">Janeiro 2024 - Dezembro 2024</span></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 data-translate="exp3_cargo">Desenvolvedor Web/Mobile e Pesquisador</h3>
-                        <p class="company">Universidade Estadual de Santa Cruz (UESC)</p>
-                        <p class="date"><i class="ph-duotone ph-calendar-blank"></i> <span data-translate="exp3_data">Março 2022 - Presente</span></p>
-                    </div>
-                </div>
+      <section id="experiencia" class="container content-section">
+        <h2 class="section-title" data-translate="experiencia_titulo">
+          Experiência
+        </h2>
+        <p class="section-subtitle" data-translate="experiencia_subtitulo">
+          Minha jornada profissional
+        </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3 data-translate="exp1_cargo">Desenvolvedor Mobile e Web</h3>
+              <p class="company">CEPEDI</p>
+              <p class="date">
+                <i class="ph-duotone ph-calendar-blank"></i>
+                <span data-translate="exp1_data"
+                  >Junho 2024 - Dezembro 2024</span
+                >
+              </p>
             </div>
-        </section>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3 data-translate="exp2_cargo">
+                Desenvolvedor e Pesquisador em IA
+              </h3>
+              <p class="company" data-translate="exp2_empresa">
+                Projeto BAH.IA
+              </p>
+              <p class="date">
+                <i class="ph-duotone ph-calendar-blank"></i>
+                <span data-translate="exp2_data"
+                  >Janeiro 2024 - Dezembro 2024</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3 data-translate="exp3_cargo">
+                Desenvolvedor Web/Mobile e Pesquisador
+              </h3>
+              <p class="company">Universidade Estadual de Santa Cruz (UESC)</p>
+              <p class="date">
+                <i class="ph-duotone ph-calendar-blank"></i>
+                <span data-translate="exp3_data">Março 2022 - Presente</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="habilidades" class="container content-section">
-            <h2 class="section-title" data-translate="nav_habilidades">Habilidades</h2>
-            <p class="section-subtitle" data-translate="habilidades_subtitulo">Meu nível técnico</p>
-            <div class="skills-grid">
-                <div class="skill-category"><h3>Linguagens</h3><div class="skills-list"><div class="skill-item">JavaScript (ES6+)</div><div class="skill-item">TypeScript</div><div class="skill-item">Python</div><div class="skill-item">HTML5</div><div class="skill-item">CSS3</div></div></div>
-                <div class="skill-category"><h3>Frameworks & Bibliotecas</h3><div class="skills-list"><div class="skill-item">React.js</div><div class="skill-item">React Native</div><div class="skill-item">Node.js</div><div class="skill-item">Express.js</div><div class="skill-item">Next.js</div></div></div>
-                <div class="skill-category"><h3>Bancos de Dados</h3><div class="skills-list"><div class="skill-item">Firebase (Firestore)</div><div class="skill-item">MongoDB</div></div></div>
-                <div class="skill-category"><h3>Ferramentas e Outras</h3><div class="skills-list"><div class="skill-item">Git & GitHub</div><div class="skill-item">Vite</div><div class="skill-item">Framer Motion</div><div class="skill-item">Tailwind CSS</div><div class="skill-item">APIs RESTful</div></div></div>
+      <section id="habilidades" class="container content-section">
+        <h2 class="section-title" data-translate="nav_habilidades">
+          Habilidades
+        </h2>
+        <p class="section-subtitle" data-translate="habilidades_subtitulo">
+          Meu nível técnico
+        </p>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Linguagens</h3>
+            <div class="skills-list">
+              <div class="skill-item">JavaScript (ES6+)</div>
+              <div class="skill-item">TypeScript</div>
+              <div class="skill-item">Python</div>
+              <div class="skill-item">HTML5</div>
+              <div class="skill-item">CSS3</div>
             </div>
-        </section>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Bibliotecas</h3>
+            <div class="skills-list">
+              <div class="skill-item">React.js</div>
+              <div class="skill-item">React Native</div>
+              <div class="skill-item">Node.js</div>
+              <div class="skill-item">Express.js</div>
+              <div class="skill-item">Next.js</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Bancos de Dados</h3>
+            <div class="skills-list">
+              <div class="skill-item">Firebase (Firestore)</div>
+              <div class="skill-item">MongoDB</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Ferramentas e Outras</h3>
+            <div class="skills-list">
+              <div class="skill-item">Git & GitHub</div>
+              <div class="skill-item">Vite</div>
+              <div class="skill-item">Framer Motion</div>
+              <div class="skill-item">Tailwind CSS</div>
+              <div class="skill-item">APIs RESTful</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="projetos" class="container content-section">
-            <h2 class="section-title" data-translate="nav_projetos">Projeto em Destaque</h2>
-            <div class="project-container">
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Ultraflix - Plataforma de Streaming</h3>
-                        <p data-translate="projetos_p1_desc">Plataforma de streaming interativa com catálogo de filmes, lista de favoritos, avaliações e comentários.</p>
-                        <div class="project-techs">
-                            <span>React</span><span>Vite</span><span>Firebase</span><span>Framer Motion</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Tarsis59/ultraflix-react-project" target="_blank" class="project-btn"><i class="ph-duotone ph-github-logo"></i> <span data-translate="projetos_btn_codigo">Código</span></a>
-                            <a href="https://ultraflix-react-project.vercel.app/" target="_blank" class="project-btn"><i class="ph-duotone ph-arrow-up-right"></i> Demo</a>
-                        </div>
-                    </div>
-                </div>
+      <section id="projetos" class="container content-section">
+        <h2 class="section-title" data-translate="nav_projetos">
+          Projeto em Destaque
+        </h2>
+        <div class="project-container">
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Ultraflix - Plataforma de Streaming</h3>
+              <p data-translate="projetos_p1_desc">
+                Plataforma de streaming interativa com catálogo de filmes, lista
+                de favoritos, avaliações e comentários.
+              </p>
+              <div class="project-techs">
+                <span>React</span><span>Vite</span><span>Firebase</span
+                ><span>Framer Motion</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Tarsis59/ultraflix-react-project"
+                  target="_blank"
+                  class="project-btn"
+                  ><i class="ph-duotone ph-github-logo"></i>
+                  <span data-translate="projetos_btn_codigo">Código</span></a
+                >
+                <a
+                  href="https://ultraflix-react-project.vercel.app/"
+                  target="_blank"
+                  class="project-btn"
+                  ><i class="ph-duotone ph-arrow-up-right"></i> Demo</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="contato" class="container content-section">
-            <h2 class="section-title" data-translate="contato_titulo">Contato</h2>
-            <p class="section-subtitle" data-translate="contato_subtitulo">Entre em contato</p>
-            <div class="contato-content">
-                <div class="contato-info"><h3 data-translate="contato_fale_comigo">Fale comigo</h3><div class="contato-card"><i class="ph-duotone ph-envelope"></i><h4>E-mail</h4><p>tarsissurf59mito@gmail.com</p><a href="mailto:tarsissurf59mito@gmail.com" data-translate="contato_mandar_mensagem">Mandar mensagem →</a></div><div class="contato-card"><i class="ph-duotone ph-whatsapp-logo"></i><h4>WhatsApp</h4><p>+55 (73) 99848-9747</p><a href="https://wa.me/5573998489747" target="_blank" data-translate="contato_mandar_mensagem">Mandar mensagem →</a></div></div>
-                <form action="https://formspree.io/f/xwpqnpbq" method="POST" class="contato-form"><h3 data-translate="contato_escreva_mensagem">Escreva uma mensagem</h3><div><label for="name" data-translate="contato_form_nome">Nome</label><input type="text" id="name" name="name" placeholder="Digite seu nome" required></div><div><label for="email" data-translate="contato_form_email">E-mail</label><input type="email" id="email" name="email" placeholder="Digite seu e-mail" required></div><div><label for="message" data-translate="contato_form_mensagem">Mensagem</label><textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea></div><button type="submit" class="btn" data-translate="contato_form_botao">Enviar mensagem</button></form>
+      <section id="contato" class="container content-section">
+        <h2 class="section-title" data-translate="contato_titulo">Contato</h2>
+        <p class="section-subtitle" data-translate="contato_subtitulo">
+          Entre em contato
+        </p>
+        <div class="contato-content">
+          <div class="contato-info">
+            <h3 data-translate="contato_fale_comigo">Fale comigo</h3>
+            <div class="contato-card">
+              <i class="ph-duotone ph-envelope"></i>
+              <h4>E-mail</h4>
+              <p>tarsissurf59mito@gmail.com</p>
+              <a
+                href="mailto:tarsissurf59mito@gmail.com"
+                data-translate="contato_mandar_mensagem"
+                >Mandar mensagem →</a
+              >
             </div>
-        </section>
+            <div class="contato-card">
+              <i class="ph-duotone ph-whatsapp-logo"></i>
+              <h4>WhatsApp</h4>
+              <p>+55 (73) 99848-9747</p>
+              <a
+                href="https://wa.me/5573998489747"
+                target="_blank"
+                data-translate="contato_mandar_mensagem"
+                >Mandar mensagem →</a
+              >
+            </div>
+          </div>
+          <form
+            action="https://formspree.io/f/xwpqnpbq"
+            method="POST"
+            class="contato-form"
+          >
+            <h3 data-translate="contato_escreva_mensagem">
+              Escreva uma mensagem
+            </h3>
+            <div>
+              <label for="name" data-translate="contato_form_nome">Nome</label
+              ><input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" data-translate="contato_form_email"
+                >E-mail</label
+              ><input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+            <div>
+              <label for="message" data-translate="contato_form_mensagem"
+                >Mensagem</label
+              ><textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Escreva sua mensagem"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn"
+              data-translate="contato_form_botao"
+            >
+              Enviar mensagem
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    
-        <footer>
-        <div class="container">
-            <a href="#home" class="footer-logo" data-translate="logo">TÁRSIS.DEV</a>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/t%C3%A1rsis-barreto-59u59/" target="_blank" title="LinkedIn" class="magnetic"><i class="ph-duotone ph-linkedin-logo"></i></a>
-                <a href="https://github.com/Tarsis59" target="_blank" title="GitHub" class="magnetic"><i class="ph-duotone ph-github-logo"></i></a>
-                <a href="https://www.instagram.com/tarsis.crvalho" target="_blank" title="Instagram" class="magnetic"><i class="ph-duotone ph-instagram-logo"></i></a>
-            </div>
-            <p data-translate="footer_copyright">© TÁRSIS.DEV. Todos os direitos reservados.</p>
+    <footer>
+      <div class="container">
+        <a href="#home" class="footer-logo" data-translate="logo">TÁRSIS.DEV</a>
+        <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/t%C3%A1rsis-barreto-59u59/"
+            target="_blank"
+            title="LinkedIn"
+            class="magnetic"
+            ><i class="ph-duotone ph-linkedin-logo"></i
+          ></a>
+          <a
+            href="https://github.com/Tarsis59"
+            target="_blank"
+            title="GitHub"
+            class="magnetic"
+            ><i class="ph-duotone ph-github-logo"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/tarsis.crvalho"
+            target="_blank"
+            title="Instagram"
+            class="magnetic"
+            ><i class="ph-duotone ph-instagram-logo"></i
+          ></a>
         </div>
+        <p data-translate="footer_copyright">
+          © TÁRSIS.DEV. Todos os direitos reservados.
+        </p>
+      </div>
     </footer>
-        
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
