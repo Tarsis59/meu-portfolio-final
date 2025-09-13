@@ -50,5 +50,6 @@
     "contato_form_email": "E-mail",
     "contato_form_mensagem": "Message",
     "contato_form_botao": "Send message",
+    "projetos_p2_desc": "A complete to-do list application, built from scratch with React, Next.js, and Firebase, focused on productivity and gamification.",
     "footer_copyright": "© TÁRSIS.DEV. All rights reserved."
 }

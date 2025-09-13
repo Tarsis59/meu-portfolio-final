@@ -50,5 +50,6 @@
     "contato_form_email": "E-mail",
     "contato_form_mensagem": "Mensagem",
     "contato_form_botao": "Enviar mensagem",
+    "projetos_p2_desc": "Uma aplicação de lista de tarefas completa, construída com React, Next.js e Firebase, focada em produtividade e gamificação.",
     "footer_copyright": "© TÁRSIS.DEV. Todos os direitos reservados."
 }
