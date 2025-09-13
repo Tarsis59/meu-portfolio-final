@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
 <head>
@@ -39,6 +40,7 @@
     </header>
 
     <main>
+        <!-- As outras seções (Home, Sobre, etc.) permanecem as mesmas -->
         <section id="home" class="container content-section">
             <div class="home-text">
                 <h1 data-translate="home_saudacao">Olá, eu sou</h1>
@@ -67,7 +69,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="processo" class="container content-section">
             <h2 class="section-title" data-translate="processo_titulo">Meu Processo</h2>
             <p class="section-subtitle" data-translate="processo_subtitulo">Como transformo ideias em realidade</p>
@@ -100,9 +102,37 @@
             </div>
         </section>
 
+        <!-- SEÇÃO PROJETOS (MODIFICADA PARA CARROSSEL) -->
         <section id="projetos" class="container content-section">
-            <h2 class="section-title" data-translate="nav_projetos">Projeto em Destaque</h2>
-            <div class="project-container"><div class="project-card"><div class="project-info"><h3>Ultraflix - Plataforma de Streaming</h3><p data-translate="projetos_p1_desc">Plataforma de streaming interativa com catálogo de filmes, lista de favoritos, avaliações e comentários.</p><div class="project-techs"><span>React</span><span>Vite</span><span>Firebase</span><span>Framer Motion</span></div><div class="project-links"><a href="https://github.com/Tarsis59/ultraflix-react-project" target="_blank" class="project-btn"><i class="ph-duotone ph-github-logo"></i> <span data-translate="projetos_btn_codigo">Código</span></a><a href="https://ultraflix-react-project.vercel.app/" target="_blank" class="project-btn"><i class="ph-duotone ph-arrow-up-right"></i> Demo</a></div></div></div></div>
+            <h2 class="section-title" data-translate="nav_projetos">Projetos</h2>
+            <div class="project-carousel">
+                <div class="project-slider">
+                    <!-- Projeto 1: Ultraflix -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Ultraflix - Plataforma de Streaming</h3>
+                            <p data-translate="projetos_p1_desc">Plataforma de streaming interativa com catálogo de filmes, lista de favoritos, avaliações e comentários.</p>
+                            <div class="project-techs"><span>React</span><span>Vite</span><span>Firebase</span><span>Framer Motion</span></div>
+                            <div class="project-links"><a href="https://github.com/Tarsis59/ultraflix-react-project" target="_blank" class="project-btn"><i class="ph-duotone ph-github-logo"></i> <span data-translate="projetos_btn_codigo">Código</span></a><a href="https://ultraflix-react-project.vercel.app/" target="_blank" class="project-btn"><i class="ph-duotone ph-arrow-up-right"></i> Demo</a></div>
+                        </div>
+                    </div>
+                    <!-- Projeto 2: Zenith (NOVO) -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Zenith - Produtividade Gamificada</h3>
+                            <p data-translate="projetos_p2_desc">Uma aplicação de lista de tarefas completa, construída com React, Next.js e Firebase, focada em produtividade e gamificação.</p>
+                            <div class="project-techs"><span>React</span><span>Next.js</span><span>Firebase</span></div>
+                            <div class="project-links"><a href="https://github.com/Tarsis59/zenith-app-react" target="_blank" class="project-btn"><i class="ph-duotone ph-github-logo"></i> <span data-translate="projetos_btn_codigo">Código</span></a><a href="https://zenith-app-task.netlify.app/dashboard" target="_blank" class="project-btn"><i class="ph-duotone ph-arrow-up-right"></i> Demo</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navegação do Carrossel -->
+                <div class="carousel-navigation">
+                    <button id="prev-btn" class="slider-btn"><i class="ph-bold ph-caret-left"></i></button>
+                    <div class="carousel-dots"></div>
+                    <button id="next-btn" class="slider-btn"><i class="ph-bold ph-caret-right"></i></button>
+                </div>
+            </div>
         </section>
 
         <section id="contato" class="container content-section">
@@ -129,4 +159,3 @@
 
     <script src="script.js"></script>
 </body>
-</html>
