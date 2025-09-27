@@ -214,12 +214,11 @@ nav {
 
 .home-image img {
   width: 380px;
-  height: 380px;
-  object-fit: cover;
-  border-radius: 50%;
+  height: 500px;         /* <-- MUDANÇA: Aumenta a altura */
+  object-fit: cover;     /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 12px;   /* <-- MUDANÇA: Deixa de ser um círculo */
   border: 2px solid var(--border-color);
 }
-
 /* SEÇÃO SOBRE */
 .sobre-content {
   display: grid;
@@ -775,8 +774,7 @@ footer p {
   .nav-list a {
     font-size: 1.25rem;
   }
-
-  /* --- SEÇÃO HOME (VISTA MOBILE) --- */
+/* --- SEÇÃO HOME (VISTA MOBILE) --- */
 #home {
   flex-direction: column-reverse; /* Imagem fica em cima, texto embaixo */
   text-align: center;
@@ -792,8 +790,9 @@ footer p {
 }
 .home-image img {
   width: 280px;
-  height: 280px;
-  object-fit: cover; /* CORREÇÃO ADICIONADA: Mantém a proporção da imagem */
+  height: 380px;        /* <-- MUDANÇA: Aumenta a altura para mobile */
+  object-fit: cover;    /* Mantém a proporção da imagem */
+  border-radius: 12px;  /* <-- MUDANÇA: Garante que seja um retângulo arredondado */
 }
 
   /* --- SEÇÃO SOBRE E CONTATO --- */
