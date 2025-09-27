@@ -791,8 +791,8 @@ footer p {
   font-size: 3.5rem;
 }
 .home-image img {
-  width: 380px;
-  height: 380px;
+  width: 280px;
+  height: 280px;
   object-fit: cover; /* CORREÇÃO ADICIONADA: Mantém a proporção da imagem */
 }
 
