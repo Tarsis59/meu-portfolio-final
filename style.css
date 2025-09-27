@@ -776,24 +776,25 @@ footer p {
     font-size: 1.25rem;
   }
 
-  /* --- SEÇÃO HOME --- */
-  #home {
-    flex-direction: column-reverse; /* Imagem fica em cima, texto embaixo */
-    text-align: center;
-    gap: 2rem;
-    min-height: auto;
-    padding-top: 120px;
-  }
-  .home-text p {
-    margin: 0 auto; /* Centraliza o parágrafo de descrição */
-  }
-  .home-name {
-    font-size: 3.5rem;
-  }
-  .home-image img {
-    width: 280px;
-    height: 280px;
-  }
+  /* --- SEÇÃO HOME (VISTA MOBILE) --- */
+#home {
+  flex-direction: column-reverse; /* Imagem fica em cima, texto embaixo */
+  text-align: center;
+  gap: 2rem;
+  min-height: auto;
+  padding-top: 120px;
+}
+.home-text p {
+  margin: 0 auto; /* Centraliza o parágrafo de descrição */
+}
+.home-name {
+  font-size: 3.5rem;
+}
+.home-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover; /* CORREÇÃO ADICIONADA: Mantém a proporção da imagem */
+}
 
   /* --- SEÇÃO SOBRE E CONTATO --- */
   .sobre-content,
